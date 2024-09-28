@@ -10,7 +10,7 @@ export default function Home() {
       <button className="btn btn-active btn-primary">Primary</button>
       <button className="btn btn-active btn-secondary">Secondary</button>
       <button className="btn btn-active btn-accent">Accent</button>
-      <button className="btn btn-active btn-ghost">Ghost</button>
+      
       </div>
     </div>
   );
