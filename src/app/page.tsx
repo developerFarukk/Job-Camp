@@ -10,6 +10,7 @@ export default function Home() {
       <button className="btn btn-active btn-secondary">Secondary</button>
       <button className="btn btn-active btn-accent">Accent</button>
       <h2>Amar suner bangla ami tumay balobasi</h2>
+      <p>kjsdhsdf dskjnjjnnd knanfff </p>
       
       
       </div>
