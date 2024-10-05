@@ -13,7 +13,9 @@ export default function Home() {
       <p>kjsdhsdf dskjnjjnnd knanfff </p>
       <h3>dilka paasyhgcv j </h3>
       <h2>kjsdj kjhsjkbdf jjdhJs</h2>
-      <h1>amader cjdsfj sdjnsdif sdjnf </h1>
+      <div>
+        <button className="btn btn-warning"> Subbmit Now </button>
+      </div>
       
       
       </div>
