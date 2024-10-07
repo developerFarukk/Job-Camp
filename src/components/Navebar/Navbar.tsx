@@ -45,7 +45,9 @@ const Navbar = () => {
                                     height={60}
                                     priority
                                 />
-                                <h2 className="text-3xl font-bold">JobCamp</h2>
+                                <div className="hidden lg:block md:block">
+                                    <h2 className=" text-3xl font-bold">JobCamp</h2>
+                                </div>
                             </div>
                         </Link>
                     </div>
@@ -68,12 +70,11 @@ const Navbar = () => {
                         </nav>
                     </div>
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center ">
                         <div className="sm:flex sm:gap-4">
 
-                            <div className="hidden sm:flex">
+                            <div className=" sm:flex">
                                 <Link className="block text-teal-600" href="/">
-                                    <span className="sr-only">Home</span>
                                     {/* <Image
                                         className=""
                                         src={icon2}
@@ -104,12 +105,12 @@ const Navbar = () => {
                                     </div>
                                     <ul
                                         tabIndex={0}
-                                        className="menu menu-sm dropdown-content dropdown-end right-1 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                                        className="menu bg-blue-50 menu-sm dropdown-content dropdown-end right-1 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                                     >
                                         {navItems?.map((navItem) => (
                                             <li key={navItem.path}>
                                                 <Link
-                                                    className='text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75'
+                                                    className='text-gray-800  font-bold  inline-block transition  hover:text-blue-500'
                                                     href={navItem.path}
                                                 >
                                                     {navItem.title}
