@@ -1,12 +1,13 @@
 
 import React from "react";
+import Navbar from "../Navebar/Navbar";
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className="mx-auto w-[95%] p-6 lg:px-8">
+        <div className="mx-auto lg:w-[95%] md:w-[98%] p-2 lg:px-8">
             {/* Header Components */}
             <div>
-                <p>This is Header</p>
+                <Navbar></Navbar>
             </div>
 
             {/* Main content */}
