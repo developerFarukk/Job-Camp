@@ -1,5 +1,6 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
+import job from '../../../public/jobcamp.ico'
 
 
 
@@ -30,21 +31,22 @@ const Navbar = () => {
 
 
     return (
-        <header className="p-2">
-            <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <header className="">
+            <div className="mx-auto max-w-screen-xl ">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
-                        <Link className="block text-teal-600" href="/">
-                            <span className="sr-only">Home</span>
-                            {/* <Image
-                                className=""
-                                src={icon1}
-                                alt="icon 1"
-                                width={180}
-                                height={38}
-                                priority
-                            /> */}
-                            <h2>JobCamp</h2>
+                        <Link className="block text-teal-600 hover:bg-blue-50 hover:text-black rounded-full p-2" href="/">
+                            <div className="flex gap-2 items-center">
+                                <Image
+                                    className=""
+                                    src={job}
+                                    alt="JobCamp"
+                                    width={60}
+                                    height={60}
+                                    priority
+                                />
+                                <h2 className="text-3xl font-bold">JobCamp</h2>
+                            </div>
                         </Link>
                     </div>
 
@@ -80,7 +82,7 @@ const Navbar = () => {
                                         height={60}
                                         priority
                                     /> */}
-                                    <h2>LogIn</h2>
+                                    <button className="btn btn-warning"><h2>LogIn</h2></button>
                                 </Link>
                             </div>
                         </div>
