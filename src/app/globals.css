@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -29,6 +30,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem
   }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -56,13 +58,87 @@
     --chart-5: 340 75% 55%
   }
 }
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
+.menu {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  transition: all .35s ease;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover {
+    color: black;
+
+    &::before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  /* Display inline block */
+  position: relative;
+  /* Set position relative */
+  color:
+    #0087ca;
+  /* Set text color */
+}
+
+.hover-underline-animation:after {
+  content: '';
+  /* Add content after the element */
+  position: absolute;
+  /* Position absolute for pseudo-element */
+  width: 100%;
+  /* Full width */
+  transform: scaleX(0);
+  /* Initial scale of 0 for underline effect */
+  height: 2px;
+  /* Height of the underline */
+  bottom: 0;
+  /* Align to bottom */
+  left: 0;
+  /* Align to left */
+  background-color:
+    #0087ca;
+  /* Background color of the underline */
+  transform-origin: bottom right;
+  /* Set transform origin */
+  transition: transform 0.25s ease-out;
+  /* Transition effect for the underline */
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  /* Scale the underline on hover */
+  transform-origin: bottom left;
+  /* Set transform origin */
+}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import job from '../../../public/jobcamp.ico'
+import { TfiSettings } from "react-icons/tfi";
 
 
 
@@ -8,33 +9,41 @@ const Navbar = () => {
 
     const navItems: { title: string; path: string }[] = [
         {
-            title: 'Home',
+            title: 'Job Search',
             path: '/',
         },
         {
             title: 'Service',
-            path: '/aboutus',
+            path: '/service',
         },
         {
-            title: 'Portfolio',
-            path: '/AllShoe',
+            title: 'career Advice',
+            path: '/advice',
         },
         {
-            title: 'Blogs',
-            path: '/blog',
+            title: 'Notice',
+            path: '/notice',
         },
         {
-            title: 'Contacts Us',
-            path: '/contact-us',
+            title: 'Explore Companies',
+            path: '/explore',
         }
     ];
 
 
     return (
-        <header className="">
-            <div className="mx-auto max-w-screen-xl ">
+        <header className="shrink-0 ">
+            <div className="mx-auto max-w-screen ">
                 <div className="flex h-16 items-center justify-between">
-                    <div className="md:flex md:items-center md:gap-12">
+                    <div className="flex gap-1 items-center">
+
+                        {/* Menu setting */}
+                        <div>
+                            <div>
+                                <TfiSettings className="h-10 w-10 p-1 hover:bg-blue-100 rounded-full" />
+                            </div>
+                        </div>
+
                         <Link className="block text-teal-600 hover:bg-blue-50 hover:text-black rounded-full p-2" href="/">
                             <div className="flex gap-2 items-center">
                                 <Image
@@ -50,6 +59,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </Link>
+
                     </div>
 
                     <div className="hidden md:block">
@@ -58,7 +68,7 @@ const Navbar = () => {
                                 {navItems?.map((navItem) => (
                                     <li key={navItem.path}>
                                         <Link
-                                            className='text-gray-800 font-bold  inline-block transition  hover:text-gray-500/75'
+                                            className='text-gray-800 font-bold lg:text-lg inline-block transition hover-underline-animation'
                                             href={navItem.path}
                                         >
                                             {navItem.title}
@@ -110,7 +120,7 @@ const Navbar = () => {
                                         {navItems?.map((navItem) => (
                                             <li key={navItem.path}>
                                                 <Link
-                                                    className='text-gray-800  font-bold  inline-block transition  hover:text-blue-500'
+                                                    className='text-gray-800  font-bold  inline-block transition  menu'
                                                     href={navItem.path}
                                                 >
                                                     {navItem.title}
