@@ -103,7 +103,9 @@ const Navbar = () => {
                                 </SheetTrigger>
                                 <SheetContent side="left">
                                     <Link className="mr-6 hidden lg:flex" href={"#"}>
-                                        <h3>JOB CAMP</h3>
+                                        <div className="">
+                                            <h3 className="">---- JOB CAMP ----</h3>
+                                        </div>
                                     </Link>
                                     <div className="grid gap-2 py-6">
                                         {settingItems?.map((navItem) =>
@@ -145,7 +147,7 @@ const Navbar = () => {
                                     priority
                                 />
                                 <div className="hidden lg:block md:block">
-                                    <h2 className=" text-3xl flex justify-center font-bold">---- JobCamp ----</h2>
+                                    <h2 className=" text-3xl font-bold">JobCamp</h2>
                                 </div>
                             </div>
                         </Link>
@@ -173,7 +175,7 @@ const Navbar = () => {
                     <div className="flex items-center ">
                         <div className="sm:flex sm:gap-4">
 
-                            <div className=" sm:flex">
+                            <div className=" sm:flex gap-2">
                                 <Link className="block text-teal-600" href="/sign-in">
                                     {/* <Image
                                         className=""
@@ -184,6 +186,10 @@ const Navbar = () => {
                                         priority
                                     /> */}
                                     <button className="btn btn-warning"><h2>LogIn</h2></button>
+                                </Link>
+                                <Link className="block text-teal-600" href="/sign-up">
+                                    
+                                    <button className="btn btn-warning"><h2>Register</h2></button>
                                 </Link>
                             </div>
                         </div>
