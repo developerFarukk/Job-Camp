@@ -9,6 +9,8 @@ import { MdOutlineDriveFileMove } from "react-icons/md";
 import { SlHeart } from "react-icons/sl";
 import { FaRegMessage } from "react-icons/fa6";
 import { FaBrain } from "react-icons/fa6";
+import { MdPrivacyTip } from "react-icons/md";
+import { MdManageAccounts } from "react-icons/md";
 import React from "react";
 
 
@@ -70,6 +72,16 @@ const Navbar = () => {
             title: 'Skils Test',
             path: '/explore',
             icon: <FaBrain className=" p-1 w-6 h-6" />
+        },
+        {
+            title: 'Privecy setting',
+            path: '/explore',
+            icon: <MdPrivacyTip className=" p-1 w-6 h-6" />
+        },
+        {
+            title: 'Account setting',
+            path: '/explore',
+            icon: <MdManageAccounts className=" p-1 w-6 h-6" />
         }
     ];
 
@@ -91,7 +103,7 @@ const Navbar = () => {
                                 </SheetTrigger>
                                 <SheetContent side="left">
                                     <Link className="mr-6 hidden lg:flex" href={"#"}>
-                                        <h3>JOBSCO</h3>
+                                        <h3>JOB CAMP</h3>
                                     </Link>
                                     <div className="grid gap-2 py-6">
                                         {settingItems?.map((navItem) =>
