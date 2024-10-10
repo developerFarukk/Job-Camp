@@ -174,7 +174,7 @@ const Navbar = () => {
                         <div className="sm:flex sm:gap-4">
 
                             <div className=" sm:flex">
-                                <Link className="block text-teal-600" href="/">
+                                <Link className="block text-teal-600" href="/sign-in">
                                     {/* <Image
                                         className=""
                                         src={icon2}

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Suspense } from "react";
 import Loading from "./loading";
 import CommonLayout from "@/components/common-layout";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,17 +29,20 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Suspense fallback={<Loading />}>
-          <CommonLayout>
-            {children}
-          </CommonLayout>
-        </Suspense>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <Suspense fallback={<Loading />}>
+            <CommonLayout>
+              {children}
+            </CommonLayout>
+          </Suspense>
 
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
+
   );
 }
