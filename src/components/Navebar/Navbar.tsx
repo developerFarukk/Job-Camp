@@ -145,7 +145,7 @@ const Navbar = () => {
                                     priority
                                 />
                                 <div className="hidden lg:block md:block">
-                                    <h2 className=" text-3xl font-bold">JobCamp</h2>
+                                    <h2 className=" text-3xl flex justify-center font-bold">---- JobCamp ----</h2>
                                 </div>
                             </div>
                         </Link>
