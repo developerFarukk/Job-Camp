@@ -189,7 +189,7 @@ const Navbar = () => {
                                 </Link>
                                 <Link className="block text-teal-600" href="/sign-up">
                                     
-                                    <button className="btn btn-warning"><h2>Register</h2></button>
+                                    <button  className="btn  btn-warning "><h2>Register</h2></button>
                                 </Link>
                             </div>
                         </div>
