@@ -87,7 +87,7 @@ const Navbar = () => {
 
 
     return (
-        <header className="shrink-0 ">
+        <header className="shrink-0 fixed ">
             <div className="mx-auto max-w-screen ">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex gap-1 items-center">

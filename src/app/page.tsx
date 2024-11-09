@@ -24,7 +24,7 @@ const  Home = async () => {
   return (
     <div>
       <h2>Jobe Camp Main Contant </h2>
-      <h1>hi just for commit</h1>
+      <h1> I am Jntal ment</h1>
     </div>
   );
 };
