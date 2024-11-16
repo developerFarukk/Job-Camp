@@ -24,7 +24,7 @@ const  Home = async () => {
   return (
     <div>
       <h2>Jobe Camp Main Contant </h2>
-      <p>amar</p>
+      <p>amar suner bangla amiu tumabalo basi</p>
      
       <div> amader bngla</div>
     </div>
