@@ -26,7 +26,7 @@ const  Home = async () => {
       <h2>Jobe Camp Main Contant </h2>
       <p>amar suner bangla amiu tumabalo basi</p>
      
-      <div> amader bngla</div>
+      <div>amder chele hobe sei chele kobe</div>
     </div>
   );
 };
