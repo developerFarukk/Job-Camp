@@ -29,6 +29,7 @@ const  Home = async () => {
       <div>amder chele hobe sei chele kobe</div>
       <div>amder chele htfyutrfytf kobe</div>
       <div>sajhgashbfdhasb</div>
+      <div>sajhgashbfdhasb</div>
     </div>
   );
 };
