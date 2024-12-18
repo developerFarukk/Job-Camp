@@ -16,7 +16,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
             </main>
 
             {/* Footer Components */}
-            <p>This is footer</p>
+            <p>This is footer </p>
             
         </div>
     );
